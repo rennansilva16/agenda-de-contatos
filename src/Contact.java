@@ -1,3 +1,4 @@
+package src;
 
 public class Contact {
     // Atributos da classe
