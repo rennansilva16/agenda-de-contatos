@@ -17,7 +17,7 @@ Este projeto é uma aplicação de gerenciamento de contatos em Java. Ele permit
      ```
 
 2. **Navegue até a pasta do projeto**:
-   - Use o comando:
+   - Certifique-se de que você está na pasta do projeto. Use o comando se for preciso:
      ```
      cd caminho/para/agenda-de-contatos
      ```
@@ -25,7 +25,7 @@ Este projeto é uma aplicação de gerenciamento de contatos em Java. Ele permit
 3. **Compile os arquivos Java**:
    - Navegue até a pasta `src` onde estão localizados os arquivos `.java`:
      ```
-     cd src
+     cd ./src
      ```
    - Compile os arquivos Java e coloque os arquivos `.class` na pasta `bin`:
      ```
@@ -35,23 +35,28 @@ Este projeto é uma aplicação de gerenciamento de contatos em Java. Ele permit
 ## Execução da Aplicação
 
 1. **Navegue até a pasta do projeto**:
-   - Se ainda não estiver na pasta principal do projeto, vá para ela:
+   - Após compilar os arquivos java, volte para a pasta do prjeto(agenda-de-contatos):
      ```
-     cd caminho/para/agenda-de-contatos
+     cd caminho/para/agenda-de-contatos 
+     
+     ou
+
+     cd ..
      ```
 
 2. **Execute a aplicação**:
-   - Com a estrutura de diretórios atual, onde os arquivos `.class` estão em `bin` e você está na pasta principal do projeto, use o comando:
+   - Com a estrutura de diretórios atual, onde os arquivos `.class` estão dentro da pasta src em `bin` e você está na pasta principal do projeto, use o comando:
      ```
-     java -cp bin ContactManager
+     java -cp bin src.ContactManager
+
      ```
 
 ## Problemas Comuns
 
 - **Classe não encontrada**:
-  - Verifique se os arquivos `.class` estão realmente na pasta `bin` e se o diretório de execução está correto.
+  - Verifique se os arquivos `.class` estão realmente na pasta `src` dentro de `bin` e se você está executando dentro da pasta `agenda-de-contatos` .
 
 - **Erros ao compilar**:
-  - Certifique-se de que o JDK está corretamente instalado e que você está na pasta correta ao compilar os arquivos `.java`.
+  - Certifique-se de que o JDK está corretamente instalado e que você está na pasta `src` ao compilar os arquivos `.java`.
 
 ---
