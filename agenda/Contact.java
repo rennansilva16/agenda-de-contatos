@@ -1,4 +1,4 @@
-package src;
+package agenda;
 
 public class Contact {
     // Atributos da classe

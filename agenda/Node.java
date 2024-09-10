@@ -1,4 +1,4 @@
-package src;
+package agenda;
 
 public class Node {
     private Contact contact;

@@ -1,4 +1,4 @@
-package src;
+package agenda;
 
 import java.io.*;
 
@@ -28,7 +28,7 @@ public class ContactList {
         System.out.println("Contato adicionado com sucesso.");
     }
 
-    // Método para buscar um contato pelo nome ou pelo número de telefone (agora com busca parcial)
+    // Método para buscar um contato pelo nome ou pelo número de telefone
     public Contact searchContact(String nameOrPhone) {
         Node current = head;
         while (current != null) {
@@ -124,28 +124,5 @@ public class ContactList {
             }
         }
         return contactList;
-    }
-
-    // Classe Node
-    public class Node {
-        private Contact contact;
-        private Node next;
-
-        public Node(Contact contact) {
-            this.contact = contact;
-            this.next = null;
-        }
-
-        public Contact getContact() {
-            return contact;
-        }
-
-        public Node getNext() {
-            return next;
-        }
-
-        public void setNext(Node next) {
-            this.next = next;
-        }
     }
 }
